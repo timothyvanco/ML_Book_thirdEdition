@@ -68,7 +68,6 @@ df.tail()
 
 
 import matplotlib.pyplot as plt
-import  numpy as np
 
 # select setosa and versicolor
 y = df.iloc[0:100, 4].values
@@ -99,6 +98,7 @@ plt.show()
 # implement a small convenience function to visualize the decision boundaries
 
 from matplotlib.colors import ListedColormap
+
 def plot_decision_regions(X, y, classifier, resolution=0.02):
     # setup marker generator and color map
     markers = ('s', 'x', 'o', '^', 'v')
