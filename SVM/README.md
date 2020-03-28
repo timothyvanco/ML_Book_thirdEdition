@@ -21,13 +21,9 @@ How to visualize and model non-linear data with SVM?
 
 ![kernel_trick](kernel_trick.png)
 
-In my code, I tried it with this type of dataset:
+In my code, I tried it with this type of dataset and the result:
 
-![dataset_kernel_trick](datasetSVM.png)
-
-and the result is here:
-
-![kerneltrickSVM](kerneltrickSVM.png)
+![kerneltrick](kerneltrick.jpeg)
 
 ## GAMMA - cut off parameter
 Gamma is used to control overfitting.
