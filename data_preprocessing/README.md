@@ -7,12 +7,12 @@ before we feed it to a learning algorithm. In this file,
 I was working on the essential data preprocessing techniques that will help to build good machine learning models.
 
 Main topics in data pre-processing:
-• Removing and imputing missing values from the dataset
-• Getting categorical data into shape for machine learning algorithms
-• Selecting relevant features for the model construction
+- Removing and imputing missing values from the dataset
+- Getting categorical data into shape for machine learning algorithms
+- Selecting relevant features for the model construction
 
 
 I was working with wine dataset. This is picture of Feature importance in that dataset, 
 which can help in getting rid of some part of data in future - make dataset smaller.
 
-![feature_imporatence_wines](feature_imporatence_wines.jpg)
+![feature_importence_wines](feature_importence_wines.jpg)
