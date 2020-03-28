@@ -24,3 +24,7 @@ How to visualize and model non-linear data with SVM?
 In my code, I tried it with this type of dataset:
 
 ![dataset_kernel_trick](datasetSVM.png)
+
+and the result is here:
+
+![kerneltrickSVM](kerneltrickSVM.png)
