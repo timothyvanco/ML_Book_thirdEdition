@@ -10,6 +10,8 @@ that are closest to this hyperplane, which are the so-called support vectors. Th
 
 ![svm_plot](plot.jpg)
 
+
+
 ## KERNEL TRICK
 How to visualize and model non-linear data with SVM?
 
@@ -18,3 +20,26 @@ How to visualize and model non-linear data with SVM?
 2 - train linear SVM model to classify data in a new feature space
 
 ![kernel_trick](kernel_trick.png)
+
+In my code, I tried it with this type of dataset:
+
+![dataset_kernel_trick](datasetSVM.png)
+
+and the result is here:
+
+![kerneltrickSVM](kerneltrickSVM.png)
+
+## GAMMA - cut off parameter
+Gamma is used to control overfitting.
+
+svm = SVC(kernel='rbf', random_state=1, gamma=xxx, C=1.0)
+
+Bigger gammga = possible overfitting
+
+GAMMA = 0.2 
+
+![SVM_gamma_02](SVM_gamma_02.png)
+
+GAMMA = 100
+
+![SVM_gamma_100](SVM_gamma_100.png)
