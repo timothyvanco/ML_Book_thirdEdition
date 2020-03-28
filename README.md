@@ -34,8 +34,6 @@ How to visualize and model non-linear data with SVM?
 
 2 - train linear SVM model to classify data in a new feature space
 
-![kernel_trick](SVM/kernel_trick.png)
-
 In my code, I tried it with this type of dataset and the result:
 
 ![kerneltrick](SVM/kerneltrick.jpeg)
