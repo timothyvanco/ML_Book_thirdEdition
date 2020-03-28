@@ -8,7 +8,9 @@ that are closest to this hyperplane, which are the so-called support vectors. Th
 
 ## KERNEL TRICK
 How to visualize and model non-linear data with SVM?
+
 1 - transform it to higher dimension
+
 2 - train linear SVM model to classify data in a new feature space
 
 ![kernel_trick](kernel_trick.png)
