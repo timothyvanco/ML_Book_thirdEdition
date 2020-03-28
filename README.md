@@ -1,7 +1,7 @@
 ## MACHINE LEARNING
 I am coding examples from a book - Python Machine Learning third editin
 
-## PERCEPTRON
+# PERCEPTRON
 Basic code for Perceptron from scratch.
 This is how basic Perceptron looks like:
 
