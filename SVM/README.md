@@ -36,10 +36,9 @@ svm = SVC(kernel='rbf', random_state=1, gamma=xxx, C=1.0)
 
 Bigger gammga = possible overfitting
 
-GAMMA = 0.2 
+GAMMA = 0.2 | GAMMA = 100
 
-![SVM_gamma_02](SVM_gamma_02.png)
+![svmgamma](svmgamma.jpeg)
 
-GAMMA = 100
 
-![SVM_gamma_100](SVM_gamma_100.png)
+
