@@ -32,6 +32,8 @@ and the result is here:
 ## GAMMA - cut off parameter
 Gamma is used to control overfitting.
 
+svm = SVC(kernel='rbf', random_state=1, gamma=xxx, C=1.0)
+
 Bigger gammga = possible overfitting
 
 GAMMA = 0.2 
