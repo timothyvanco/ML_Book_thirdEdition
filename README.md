@@ -14,7 +14,7 @@ Then perceptron learn - adjust his weights, to divide these 2 classes.
 
 ![Sepal_Petal_length](perceptron/Sepal_Petal_length.png)
 
-Perceptron with Scikit-learn library:
+Perceptron with Scikit-learn library on Iris flower dataset:
 
 ![perceptron_skicit-learn](perceptron_skicit-learn/plot.jpg) 
 
