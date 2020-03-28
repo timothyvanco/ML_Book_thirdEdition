@@ -28,3 +28,16 @@ In my code, I tried it with this type of dataset:
 and the result is here:
 
 ![kerneltrickSVM](kerneltrickSVM.png)
+
+## GAMMA - cut off parameter
+Gamma is used to control overfitting.
+
+Bigger gammga = possible overfitting
+
+GAMMA = 0.2 
+
+![SVM_gamma_02](SVM_gamma_02.png)
+
+GAMMA = 100
+
+![SVM_gamma_100](SVM_gamma_100.png)
