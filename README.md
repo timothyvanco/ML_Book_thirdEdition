@@ -12,8 +12,6 @@ Then perceptron learn - adjust his weights, to divide these 2 classes.
 
 #### Result:
 
-![Sepal_Petal_length](perceptron/Sepal_Petal_length.png)
-
 Perceptron with Scikit-learn library on Iris flower dataset:
 
 ![perceptron_skicit-learn](perceptron_skicit-learn/plot.jpg) 
@@ -27,3 +25,29 @@ The margin is defined as the distance between the separating hyperplane (decisio
 that are closest to this hyperplane, which are the so-called support vectors. This is illustrated in the following figure:
 
 ![svm](SVM/svm.png) 
+
+#### Kernel trick
+
+How to visualize and model non-linear data with SVM?
+
+1 - transform it to higher dimension
+
+2 - train linear SVM model to classify data in a new feature space
+
+![kernel_trick](SVM/kernel_trick.png)
+
+In my code, I tried it with this type of dataset and the result:
+
+![kerneltrick](SVM/kerneltrick.jpeg)
+
+#### GAMMA - cut off parameter
+Gamma is used to control overfitting.
+
+svm = SVC(kernel='rbf', random_state=1, gamma=xxx, C=1.0)
+
+Bigger gammga = possible overfitting
+
+GAMMA = 0.2 | GAMMA = 100
+
+![svmgamma](SVM/svmgamma.jpeg)
+
