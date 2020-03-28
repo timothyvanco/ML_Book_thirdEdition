@@ -19,4 +19,4 @@ Random forests are an ensemble learning method for classification, regression an
 
 Random forest of 25 decision trees:
 
-![random_forest](random_forest_25DT.png)
+![random_forest](random_forest_25DT.jpg)
