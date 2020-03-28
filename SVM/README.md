@@ -6,6 +6,10 @@ that are closest to this hyperplane, which are the so-called support vectors. Th
 
 ![svm](svm.png) 
 
+### result on Iris flower dataset
+
+![svm_plot](plot.jpg)
+
 ## KERNEL TRICK
 How to visualize and model non-linear data with SVM?
 
