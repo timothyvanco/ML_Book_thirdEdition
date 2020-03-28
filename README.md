@@ -101,5 +101,5 @@ Main topics in data pre-processing:
 I was working with wine dataset. This is picture of Feature importance in that dataset, 
 which can help in getting rid of some part of data in future - make dataset smaller.
 
-![feature_importance_wines](feature_importance_wines.jpg)
+![feature_importance_wines](data_preprocessing/feature_importance_wines.jpg)
 
