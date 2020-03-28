@@ -16,5 +16,5 @@ Then perceptron learn - adjust his weights, to divide these 2 classes.
 
 Perceptron with Scikit-learn library:
 
-![perceptron_skicit-learn](perceptron_skicit-learn/plot.png) 
+![perceptron_skicit-learn](perceptron_skicit-learn/plot.jpg) 
 
