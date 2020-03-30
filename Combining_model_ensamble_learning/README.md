@@ -37,7 +37,7 @@ ROC AUC: 0.88 (+/- 0.15) [KNN]
 
 ROC AUC: 0.94 (+/- 0.13) [Majority voting]
 
-![roc](roc.png)
+![roc](ROC.png)
 
 Interestingly, but also as expected, the decision regions of the ensemble classifier seem to be a hybrid of 
 the decision regions from the individual classifiers. At first glance, the majority vote decision boundary 
