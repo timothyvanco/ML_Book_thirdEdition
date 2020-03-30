@@ -119,3 +119,74 @@ class-separability in a linear feature space
 Using the kernel trick and a temporary projection into a higher-dimensional feature space, 
 I was ultimately able to compress datasets consisting of nonlinear features onto a lower-dimensional 
 subspace where the classes became linearly separable.
+
+# MODEL EVALUATION & HYPERPARAMETER TUNIG
+
+My code in this example is all based on Breast Cancer Wisconsin dataset.
+(https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic) )
+
+#### Pipeline
+
+I worked with Pipeline -  fit a model including an arbitrary number of 
+transformation steps and apply it to make predictions about new data
+
+#### holdout method
+
+Split the dataste into 3 categories:
+
+- Train dataset
+- Validation dataset
+- Test dataset
+
+It is very good to have test data which hasn't been seen yet! Model will be good on predicting in real world on new data.
+
+#### K-fold cross-validation
+
+In k-fold cross-validation, we randomly split the training dataset into k folds without replacement, where k – 1 folds are 
+used for the model training, and one fold is used for performance evaluation. This procedure is repeated k 
+times so that we obtain k models and performance estimates
+
+-> then calculate average performace
+
+-> after finding satisfactory hyperparameters values => retrain model on complete training dataset -> obtain final performance
+
+-> advantage => each example will be used for training & for validation exactly once
+
+![kfoldcrossvalidation](Model_evaluation/kfoldcrossvalidation.png)
+
+#### Grid search
+
+it's a brute-force exhaustive search paradigm where we specify a list of values for different 
+hyperparameters, and the computer evaluates the model performance for each combination 
+to obtain the optimal combination of values from this set
+
+#### Nested cross-validation
+
+![nestedcrossvalidation](Model_evaluation/nestedcrossvalidation.png)
+
+#### Confusion matrix
+
+A confusion matrix is simply a square matrix that reports the counts of the true positive (TP), true negative (TN), 
+false positive (FP), and false negative (FN) predictions of a classifier, as shown in the following figure
+
+![confusionmatrix](Model_evaluation/confusionmatrix.png)
+
+### ROC AUC
+Receiver operating characteristic (ROC) graphs are useful tools to select models for 
+classification based on their performance with respect to the FPR and TPR, which are computed by shifting 
+the decision threshold of the classifier. The diagonal of
+a ROC graph can be interpreted as random guessing, and classification models that fall 
+below the diagonal are considered as worse than random guessing. A perfect classifier would 
+fall into the top-left corner of the graph with a TPR of 1 and an FPR of 0. Based on the ROC curve, 
+we can then compute the so-called ROC area under the curve (ROC AUC) to characterize the performance 
+of a classification model
+
+### CLASS IMBALANCE
+
+When class1 has 80% and class2 has 20% of dataset
+
+SOLVE class imbalance:
+- assign a larger penalty to wrong predictions on the minority class
+- upsampling the minority class, downsampling the majority class
+- generation of synthetic training examples
+
