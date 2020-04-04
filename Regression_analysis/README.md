@@ -55,7 +55,7 @@ the training examples are the so-called offsets or residuals—the errors of our
 
 As an alternative to throwing out outliers, we will look at a robust method of regression using the RANdom SAmple Consensus (RANSAC) algorithm, which fits a regression model to a subset of the data, the so-called inliers.
 
-![RANSAC](RANSAC.png)
+![rnsc](RANSAC.png)
 
 
 ### Polynomial regression
