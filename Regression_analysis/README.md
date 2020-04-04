@@ -16,6 +16,16 @@ In this Chapter I am working with Housing dataset which can be downloaded from -
 
 https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/datasets/data/boston_house_prices.csv
 
+#### SCATTER PLOT
+
+![scatterplotmatrix](scatterplotmatrix.png)
+
+
+#### CORRELATION MATRIX
+
+![correlationmatrix](correlationmatrix.png)
+
+
 ## Linear Regression
 
 The goal of linear regression is to model the relationship between 
@@ -39,7 +49,42 @@ linear regression can be understood as finding the best-fitting straight line th
 This best-fitting line is also called the regression line, and the vertical lines from the regression line to 
 the training examples are the so-called offsets or residuals—the errors of our prediction
 
+![rooms_vs_price](rooms_vs_price.png)
+
+### RANSAC
+
+As an alternative to throwing out outliers, we will look at a robust method of regression using the RANdom SAmple Consensus (RANSAC) algorithm, which fits a regression model to a subset of the data, the so-called inliers.
+
+![RANSAC](RANSAC.png)
+
+
+### Polynomial regression
+
+y = w0 + w1x + w2x^2 + ..... + wdx^d
+
+d denotes the degree of the polynomial
+
+![polynomial_regression](polynomial_regression.png)
+
+### Modeling nonlinear relationships in the Housing dataset
+
+![lin_quad_cubic](lin_quad_cubic.png)
+
+Cubic fit captures the relationship between house prices and LSTAT better than the linear and quadratic fit. However, you should be aware that adding more and more polynomial features increases the complexity of a model and therefore increases the chance of overfitting
+
+
 ### Multiple linear regression
 
 y = w0x0 + w1x1 +... = wT x
 
+### Dealing with nonlinear relationships using random forests
+
+via the decision tree algorithm, we subdivide the input space into smaller regions that become more manageable
+An advantage of the decision tree algorithm is that it does not require any transformation of the features if we are dealing with nonlinear data, because decision trees analyze one feature at a time, rather than taking weighted combinations into account
+
+![randomforests](randomforests.png)
+
+A random forest usually has a better generalization performance than an individual decision tree due to randomness, which helps to decrease the model's variance. Other advantages of random forests are that they are less sensitive to outliers in the dataset and don't require much parameter tuning.
+The only parameter in random forests that we typically need to experiment with is the number of trees in the ensemble.
+
+Unfortunately, there is not a universal approach for dealing with non-randomness in residual plots, and it requires experimentation. Depending on the data that is available to us, we may be able to improve the model by transforming variables, tuning the hyperparameters of the learning algorithm, choosing simpler or more complex models, removing outliers, or including additional variables
