@@ -18,6 +18,7 @@ https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/datasets/data/b
 
 #### SCATTER PLOT
 
+
 ![scatterplotmatrix](scatterplotmatrix.png)
 
 
@@ -42,7 +43,7 @@ a continuous-valued target (response variable, y).
 y = w0 + w1 * x 
 
 (y = ax + b)
-
+a
 Goal is to learn the weights (w0, w1)
 
 linear regression can be understood as finding the best-fitting straight line through the training examples
