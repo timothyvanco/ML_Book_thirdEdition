@@ -299,13 +299,40 @@ This is how it looks like after I wrote some basic movie review:
 
 # Convolution neural networks
 
+![1](CNN/1.png)
+
+![2](CNN/2.png)
+
+![3](CNN/3.png)
+
+![4](CNN/4.png)
+
 # Recurrent neural networks
+
+![2](RNN/2.png)
+
+![4](RNN/4.png)
+
+![5](RNN/5.png)
+
+![6](RNN/6.png)
 
 # Generative adversial networks
 
+![1](GAN/1.png)
+
+![2](GAN/2.png)
+
+![3](GAN/3.png)
+
+
 # Reinforcement learning
 
+![1](Reinforcement_Learning/1.png)
 
+![2](Reinforcement_Learning/2.png)
+
+![3](Reinforcement_Learning/3.png)
 
 
 
