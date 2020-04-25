@@ -297,6 +297,14 @@ This is how it looks like after I wrote some basic movie review:
 
 ![review](Machine_learning_WEBApp/review.png)
 
+# Convolution neural networks
+
+# Recurrent neural networks
+
+# Generative adversial networks
+
+# Reinforcement learning
+
 
 
 
